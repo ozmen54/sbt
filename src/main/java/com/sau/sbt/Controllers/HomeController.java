@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HomeController {
     @GetMapping("/")
     public String getIndex(){
-        return "Hello CI-CD";
+        return "Hello. This is OK.";
     }
 }
