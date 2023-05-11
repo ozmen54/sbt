@@ -22,7 +22,7 @@
          stage('Create the Docker image of the application') {
              steps {
                  echo 'Image has been built'
-                 sh 'docker build -t aozmen54/app:$BUILD_VERSION .'
+                 sh 'docker build -t aozmen54/app .'
              }
          }
 
@@ -34,7 +34,7 @@
          }
          stage('Push the image to DockerHub') {
              steps {
-                 sh 'docker push aozmen54/app:$BUILD_VERSION'
+                 sh 'docker push aozmen54/app'
                  echo 'The image is pushed'
              }
          }
